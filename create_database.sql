@@ -2,7 +2,7 @@
 
 -- DROP DATABASE postgres;
 
-CREATE DATABASE postgres
+CREATE DATABASE lidar_project
     WITH 
     OWNER = postgres
     ENCODING = 'UTF8'
@@ -10,6 +10,3 @@ CREATE DATABASE postgres
     LC_CTYPE = 'English_United States.1252'
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;
-
-COMMENT ON DATABASE postgres
-    IS 'default administrative connection database';
