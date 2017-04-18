@@ -53,14 +53,18 @@
 
 	
 	// add raster layer
-	L.tileLayer('url goes here',
-	{
-		maxZoom: 18,
-		minZoom: 8,
-		opacity: 1
-	}).addTo(map);
+	//L.tileLayer('C:/Users/fng2/Documents/GTECH 734/PersonalWebsite/raster/2010_C.tif/{z}/{40.67}/{-73.06}',
+	//{
+	//	maxZoom: 18,
+	//	minZoom: 8,
+	//	//opacity: 1
+	//}).addTo(map);
 	
-	
+	// add image
+	var imageUrl = 'C:/Users/fng2/Documents/GTECH 734/PersonalWebsite/raster/2014-2012.tif',
+		imageBounds = [[40.61, -72.82], [40.75,-73.33]];
+		
+	L.imageOverlay(imageUrl, imageBounds).addTo(map);
 	
 	
 	
